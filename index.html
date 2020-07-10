@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resource Cart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      .special {
+        font-family: "Dancing Script", cursive;
+      }
+      h1 {
+        font-family: "Montserrat Subrayada", sans-serif;
+      }
+      #imgg {
+        width: 50px;
+      }
+
+      #tm {
+        font-size: 10px;
+      }
+
+      .card {
+          position: relative;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          min-width: 0;
+          height: 280px;
+          margin: 15px 0;
+          word-wrap: break-word;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 7px 25px 0;
+          background-color: #fff;
+          background-clip: border-box;
+          border: 1px solid rgba(0,0,0,.125);
+          border-bottom: 2px solid #6c8eef;
+          -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+          border-radius: .25rem;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        border-bottom: 2px solid #505050;
+      }
+
+      .card-img-top {
+          width: 100%;
+          height: 180px;
+          border-top-left-radius: calc(.25rem - 1px);
+          border-top-right-radius: calc(.25rem - 1px);
+      }
+
+      .card-body {
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          min-height: 1px;
+          padding: 1.25rem;
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><span
+              class="glyphicon glyphicon-education"
+              aria-hidden="true"
+            ></span>
+            Aryan</a
+          >
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="Project.html"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Coding Resources</a></li>
+                <li><a href="#">Hackathons and Events</a></li>
+                <li><a href="#">Student Benefits and Programs</a></li>
+                <li><a href="#">Open Source Programs</a></li>
+                <li><a href="#">Startup Programs and Incubators</a></li>
+                <li><a href="#">Internship Portals</a></li>
+                <li><a href="#">Developer Clubs and Meetups</a></li>
+                <li><a href="#">Conferences for students</a></li>
+                <li><a href="#">Top People to Follow</a></li>
+                <li><a href="#">Top Websites to Follow</a></li>
+                <li><a href="#">Top 50 YouTube Channels to Follow</a></li>
+                <li><a href="#">Additional Links</a></li>
+                <li><a href="#">Bootcamps</a></li>
+                <li><a href="#">Miscellaneous Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form> -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.google.com">Google</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <button
+      type="button"
+      class="navbar-toggle collapsed"
+      data-toggle="collapse"
+      data-target="#aryan"
+      area-expanded="false"
+    >
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon bar"></span>
+      <span class="icon bar"></span>
+      <span class="icon bar"></span>
+    </button>
+
+    <div style="margin-top: 100px"></div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-xs-6">
+            <h1>
+              <span
+                ><span
+                  class="glyphicon glyphicon-shopping-cart"
+                  aria-hidden="true"
+                ></span>
+                The Resource Cart</span
+              ><span id="tm">Links</span>
+            </h1>
+            <p class="special">
+              “Recipes tell you nothing. Learning techniques is the key.”
+            </p>
+          </div>
+          <div class="col-xs-6">
+            <div
+              style="
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="./images/web.jpg"
+                class="img-fluid"
+                style="width: 80%; height: 75%;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/code.png"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Coding Resources</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/hac.png"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hackathons and Events</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/stu.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Student Benefits and Programs</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/o.png"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Open Source Programs</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/st.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Startup Programs and Incubators</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/in.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Internship Portals</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/de.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Developer Clubs and Meetups</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/conf.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Conferences for students</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/pp.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Top People to Follow</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/webs.png"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Top Websites to Follow</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/y.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Top 50 YouTube Channels to Follow</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/lin.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Additional Links</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/boo.png"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bootcamps</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/reso.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Miscellaneous Resources</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <!-- <div class="thumbnail"> -->
+            <div class="card">
+              <img
+                src="./images/haa.jpg"
+                alt="Card image cap"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">H</h5>
+                <a href="./CR.html" class="btn btn-primary">Get Set Go</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
